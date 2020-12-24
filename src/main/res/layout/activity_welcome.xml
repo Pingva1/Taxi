@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kekw"
+    tools:context=".WelcomeActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/driverBtn"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="#E12BBA"
+        android:textSize="22sp"
+        android:text="Водитель"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customerBtn"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/driverBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#E12BBA"
+        android:textSize="22sp"
+        android:text="Пассажир"
+        android:textAllCaps="false" />
+</RelativeLayout>

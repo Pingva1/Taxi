@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kekw"
+    tools:context=".DriverRegLogActivity">
+
+    <EditText
+        android:id="@+id/driverEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusDriver"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Емайл"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/driverPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driverEmail"
+        android:layout_marginTop="50dp"
+        android:hint="Пароль"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signInDriver"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/driverPassword"
+        android:text="Вход" />
+
+    <Button
+        android:id="@+id/regDriver"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInDriver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход для водителей"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/accountCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/signInDriver"
+        android:text="Нет аккаунта?" />
+</RelativeLayout>
